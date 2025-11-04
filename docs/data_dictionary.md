@@ -1,10 +1,10 @@
-# 🎬 IMDb Dataset — Data Dictionary
+# IMDb Dataset — Data Dictionary
 
 This document explains all IMDb data files and their corresponding columns, including data types, descriptions, and sample values.
 
 ---
 
-## 📄 **1. title.akas.tsv.gz**
+## **1. title.akas.tsv.gz**
 
 Alternate/localized titles for each film or show.
 
@@ -21,7 +21,7 @@ Alternate/localized titles for each film or show.
 
 ---
 
-## 🎥 **2. title.basics.tsv.gz**
+## **2. title.basics.tsv.gz**
 
 Main metadata about each title.
 
@@ -39,7 +39,7 @@ Main metadata about each title.
 
 ---
 
-## 🎬 **3. title.crew.tsv.gz**
+## **3. title.crew.tsv.gz**
 
 Information about directors and writers of each title.
 
@@ -51,7 +51,7 @@ Information about directors and writers of each title.
 
 ---
 
-## 📺 **4. title.episode.tsv.gz**
+## **4. title.episode.tsv.gz**
 
 Episode-level details for TV series.
 
@@ -64,7 +64,7 @@ Episode-level details for TV series.
 
 ---
 
-## 🎭 **5. title.principals.tsv.gz**
+## **5. title.principals.tsv.gz**
 
 Cast and crew roles in each title.
 
@@ -79,7 +79,7 @@ Cast and crew roles in each title.
 
 ---
 
-## ⭐ **6. title.ratings.tsv.gz**
+## **6. title.ratings.tsv.gz**
 
 Aggregated ratings and votes.
 
@@ -91,7 +91,7 @@ Aggregated ratings and votes.
 
 ---
 
-## 👤 **7. name.basics.tsv.gz**
+## **7. name.basics.tsv.gz**
 
 Information about individuals in IMDb.
 
@@ -106,7 +106,7 @@ Information about individuals in IMDb.
 
 ---
 
-✅ **Purpose of Data Dictionary:**
+**Purpose of Data Dictionary:**
 This serves as a unified reference for all contributors to understand the IMDb dataset schema before performing cleaning, EDA, or modeling.
 
 ---

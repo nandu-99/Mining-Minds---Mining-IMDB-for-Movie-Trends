@@ -1,4 +1,4 @@
-## 📘 **Research Questions & Objectives**
+## **Research Questions & Objectives**
 
 ### **1. Project Overview**
 
@@ -6,7 +6,7 @@ The project aims to analyze IMDb’s movie datasets to uncover trends and predic
 
 ---
 
-### 🎯 **Objectives**
+### **Objectives**
 
 1. **Identify Success Drivers:**
    Determine which metadata factors (e.g., genre, cast, budget, region) most strongly correlate with higher IMDb ratings or popularity.
@@ -25,7 +25,7 @@ The project aims to analyze IMDb’s movie datasets to uncover trends and predic
 
 ---
 
-### ❓ **Research Questions**
+### **Research Questions**
 
 ---
 
@@ -77,7 +77,7 @@ The project aims to analyze IMDb’s movie datasets to uncover trends and predic
 
 ---
 
-### 🧭 **Expected Outcomes**
+### **Expected Outcomes**
 
 * Identification of key quantitative and qualitative drivers behind movie success.
 * A reproducible data-mining and machine-learning pipeline built on IMDb datasets.

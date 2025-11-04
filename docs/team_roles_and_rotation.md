@@ -1,6 +1,6 @@
-# 👥 Team Roles, Leadership Rotation & Work Plan
+# Team Roles, Leadership Rotation & Work Plan
 
-## 🧩 Team Overview
+## Team Overview
 
 | Member Name            | Role / Responsibility Area                                                                                                                                                                   | Key Focus Areas in Phase 1                                     |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -10,7 +10,7 @@
 
 ---
 
-## 🔁 Leadership Rotation Plan
+## Leadership Rotation Plan
 
 | Phase                                     | Leadership Role | Responsibilities                                                               |
 | ----------------------------------------- | --------------- | ------------------------------------------------------------------------------ |
@@ -26,7 +26,7 @@ Each leader will be responsible for:
 
 ---
 
-## 🗓️ Team Plan & Task Division
+## Team Plan & Task Division
 
 | Task Category                       | Responsible Member | Deliverable                                              |
 | ----------------------------------- | ------------------ | -------------------------------------------------------- |
@@ -40,7 +40,7 @@ Each leader will be responsible for:
 
 ---
 
-## 🤝 Collaboration & Backup Roles
+## Collaboration & Backup Roles
 
 * All members will review **each other’s pull requests**.
 * If one member is unavailable, another will temporarily assume their duties based on expertise.
@@ -54,7 +54,7 @@ Each leader will be responsible for:
 
 ---
 
-## 🧭 Tools & Workflow
+## Tools & Workflow
 
 * **GitHub Project Board:** Used to track To-Do, In-Progress, and Completed tasks
 * **Branch Convention:** `name/issue-number-description`
