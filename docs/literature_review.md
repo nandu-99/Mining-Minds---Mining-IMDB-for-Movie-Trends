@@ -1,4 +1,4 @@
-# 🎬 **Literature Review: Predicting Cinematic Success via Structured IMDb Metadata**
+# **Literature Review**
 
 ## 1. Introduction
 
@@ -19,7 +19,7 @@ Studies focusing on audience engagement often leverage **vote counts** and **ini
 > We will use the IMDb **Average Rating** (target variable) and **Vote Count** as key features.
 > We will analyze how the **average rating stabilizes as vote count increases**, identifying thresholds where audience consensus emerges.
 
-📚 **Reference:**
+**Reference:**
 Asur, S., & Huberman, B. A. (2010). *Predicting the Future with Social Media.* IEEE/WIC/ACM International Conference on Web Intelligence.
 [Link](https://ieeexplore.ieee.org/document/5621336)
 
@@ -35,7 +35,7 @@ Recent metadata-driven studies extended this by leveraging IMDb datasets like `t
 > **Application in our project:**
 > Using `name.basics`, `title.crew`, and `title.principals`, we will construct **historical aggregates** (mean rating, median vote count, and filmography size) for principal directors and writers, modeling creative consistency as a core feature set.
 
-📚 **Reference:**
+**Reference:**
 De Vany, A., & Walls, W. D. (1999). *Uncertainty in the Movie Industry: Does Star Power Reduce the Terror of the Box Office?* Journal of Cultural Economics, 23(4), 285–318.
 DOI: [10.1023/A:1007608125988](https://doi.org/10.1023/A:1007608125988)
 
@@ -51,7 +51,7 @@ Additional studies suggest that runtime serves as an **indirect signal of film t
 > **Application in our project:**
 > We will apply **one-hot encoding** for Genre and Start Year from `title.basics` and use **Runtime Minutes** as a continuous predictor. Interaction terms between Genre and Runtime will be tested to detect **category-specific optimal runtimes**.
 
-📚 **Reference:**
+**Reference:**
 Marović, M., et al. (2011). *Automatic Movie Ratings Prediction Using Machine Learning.* Proceedings of the 54th ELMAR Conference.
 [PDF](https://ieeexplore.ieee.org/document/6058387)
 
@@ -67,7 +67,7 @@ IMDb’s `title.akas` file provides **region and language identifiers**, enablin
 > **Application in our project:**
 > We will merge `title.basics` with `title.akas` to extract regional and linguistic attributes. Using **ANOVA tests**, we will assess **statistically significant differences** in average ratings across major language and region groups.
 
-📚 **Reference:**
+**Reference:**
 Campos, M., et al. (2019). *Cultural Bias in Online Movie Ratings: A Cross-Regional Analysis.* Journal of Media Analytics, 6(2), 112–129.
 
 ---
@@ -83,7 +83,7 @@ Recent research advocates combining **regularized linear models** (e.g., Lasso, 
 > We will implement a **dual-model approach** — using **regularized regression** for feature weight analysis and **tree-based models** for capturing nonlinear interactions.
 > We will visualize **feature importances** via permutation or SHAP analysis to interpret how IMDb metadata features contribute to overall rating predictions.
 
-📚 **Reference:**
+**Reference:**
 Lee, K., et al. (2017). *Predicting Movie Success with Machine Learning Techniques.* Proceedings of the International Conference on Data Mining.
 
 ---
@@ -96,7 +96,7 @@ IMDb’s **official non-commercial datasets** (e.g., `title.basics`, `title.rati
 > **Application in our project:**
 > We will use the official IMDb TSV datasets available at [https://datasets.imdbws.com/](https://datasets.imdbws.com/), ensuring full **transparency, reproducibility**, and **schema consistency** across all stages — from data preprocessing to model evaluation.
 
-📚 **Reference:**
+**Reference:**
 IMDb Developer. *Non-Commercial Datasets.*
 [https://developer.imdb.com/non-commercial-datasets/](https://developer.imdb.com/non-commercial-datasets/)
 
@@ -122,7 +122,7 @@ This review highlights that IMDb’s structured datasets are robust enough for *
 
 ---
 
-## 🧩 **Conclusion**
+## **Conclusion**
 
 The reviewed literature underscores the **multifaceted nature** of film analytics — combining economic, creative, cultural, and audience-driven dimensions.
 Building upon this foundation, our study introduces a **metadata-driven, interpretable, and reproducible framework** for predicting cinematic success using official IMDb datasets.

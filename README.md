@@ -1,13 +1,13 @@
-# 🎬 Mining IMDb for Movie Trends (Data Mining Project)
+# Mining IMDb for Movie Trends (Data Mining Project)
 
-## 📌 Problem Statement
+## Problem Statement
 
 The movie industry is influenced by several factors such as genres, budgets, directors, actors, and audience preferences.
 This project aims to analyze IMDb datasets to uncover **patterns and trends** that drive a movie’s success — identifying what truly impacts ratings, popularity, and long-term audience interest.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 1. Analyze how **genres** and **themes** have evolved over time.
 2. Identify directors and actors who consistently achieve higher ratings.
@@ -19,7 +19,7 @@ This project aims to analyze IMDb datasets to uncover **patterns and trends** th
 
 ---
 
-## 🧠 Dataset
+## Dataset
 
 **Source:** [IMDb Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
 
@@ -37,10 +37,10 @@ We are using the following files from the official IMDb dataset:
 
 ---
 
-## 🗂️ Repository Structure (Detailed)
+## Repository Structure (Detailed)
 
 ```
-📦 imdb-movie-trends
+imdb-movie-trends
  ┣ 📂 data
  ┃ ┣ 📂 raw
  ┃ ┣ 📂 processed
@@ -50,15 +50,26 @@ We are using the following files from the official IMDb dataset:
  ┃ ┣ literature_review.md             # Related research summary
  ┃ ┣ research_questions.md            # Core exploratory questions and rationale
  ┃ ┣ hypotheses.md                    # Hypotheses to be tested from the data
- ┃ ┣ methodology.md                   # Planned methodology and analysis approach
+ ┃ ┣ eda_&_visualization_plan.md      # Planned methodology and analysis approach
  ┃ ┣ data_dictionary.md               # Field descriptions from all IMDb files
+ ┃ ┣ data_preprocessing_plan.md     
+ ┃ ┣ progress_log.md                  # Progress log of complete project
  ┣ 📂 reports
- ┣ 📜 README.md                       # Project overview (this file)
- ┣ 📜 requirements.txt                # Python dependencies and environment setup
- ┗ 📜 .gitignore                      # Files and folders to ignore in Git
+ ┣ README.md                       # Project overview (this file)
+ ┣ requirements.txt                # Python dependencies and environment setup
+ ┗ .gitignore                      # Files and folders to ignore in Git
 ```
 
-## 👥 Team Members & Roles
+## Quick Access to Key Documentation
+
+- [Team Plan & Roles](./docs/team_roles_and_rotation.md)  
+- [Literature Review](./docs/literature_review.md)  
+- [Research Questions](./docs/research_questions.md)  
+- [Hypotheses](./docs/hypotheses.md) 
+- [Data Dictionary](./docs/Data_Dictionary.md)
+
+
+## Team Members & Roles
 
 | Name                   | Role                                                                                                  | Phase-1 Responsibility |
 | ---------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------- |
@@ -66,7 +77,7 @@ We are using the following files from the official IMDb dataset:
 | **Prerak**             | Research questions, literature review, data preprocessing, maintenance                                       | ✔                      |
 | **Prashant**           | Hypotheses creation, preprocessing plan, methodology, data preprocessing,  documentation                                    | ✔                      |
 
-🔁 **Leadership Rotation Plan:**
+**Leadership Rotation Plan:**
 
 * **Phase 1 Lead:** Vivekananda
 * **Phase 2 Lead:** Prerak
@@ -74,7 +85,7 @@ We are using the following files from the official IMDb dataset:
 
 ---
 
-## 🔄 Workflow & GitHub Usage
+## Workflow & GitHub Usage
 
 * **Branch Naming Convention:**
   `name/issue-number-description` → e.g., `vivek/issue-02-readme`
@@ -85,12 +96,12 @@ We are using the following files from the official IMDb dataset:
 * **Kanban Workflow:**
   To Do → In Progress → In Review → Done
 
-🗂️ **Kanban Board:** [View Project Board](https://github.com/users/nandu-99/projects/2)
+**Kanban Board:** [View Project Board](https://github.com/users/nandu-99/projects/2)
 ![Kanban Board](https://cdn.shopify.com/s/files/1/0868/4250/7448/files/kanban-board.png?v=1761656895)
 
 ---
 
-## 🧩 Phase Overview
+## Phase Overview
 
 | Phase       | Focus Area               | Key Deliverables                                         |
 | ----------- | ------------------------ | -------------------------------------------------------- |
@@ -100,7 +111,7 @@ We are using the following files from the official IMDb dataset:
 
 ---
 
-## 🚀 Future Plan
+## Future Plan
 
 | Phase       | Tentative Date | Key Deliverables                                       |
 | ----------- | -------------- | ------------------------------------------------------ |
