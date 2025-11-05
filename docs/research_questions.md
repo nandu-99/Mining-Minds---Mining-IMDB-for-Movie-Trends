@@ -1,4 +1,4 @@
-## **Research Questions & Objectives**
+# **Research Questions & Objectives**
 
 ### **1. Project Overview**
 
