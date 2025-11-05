@@ -66,7 +66,7 @@ imdb-movie-trends
 - [Literature Review](./docs/literature_review.md)  
 - [Research Questions](./docs/research_questions.md)  
 - [Hypotheses](./docs/hypotheses.md) 
-- [Data Dictionary](./docs/Data_Dictionary.md)
+- [Data Dictionary](./docs/data_dictionary.md)
 
 
 ## Team Members & Roles
