@@ -1,4 +1,4 @@
-### 🧠 Dataset
+# Dataset
 
 **Source:** [IMDb Non-Commercial Datasets](https://datasets.imdbws.com/)
 
