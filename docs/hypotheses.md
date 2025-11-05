@@ -1,4 +1,4 @@
-# Project Hypotheses (Hypotheses.md)
+# Hypotheses
 
 This document outlines the testable hypotheses for the "Mining IMDb for Movie Trends" project, derived from the team's core research questions. Each hypothesis is presented with a corresponding null hypothesis and a proposed methodology for testing.
 
