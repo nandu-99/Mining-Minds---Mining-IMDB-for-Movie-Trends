@@ -1,4 +1,4 @@
-# IMDb Dataset — Data Dictionary
+# Data Dictionary
 
 This document explains all IMDb data files and their corresponding columns, including data types, descriptions, and sample values.
 
