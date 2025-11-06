@@ -1,128 +1,55 @@
 # **Literature Review**
 
-## 1. Introduction
+This review analyzes the foundational paper "IMDb Data from Two Generations (1979 to 2019)" (Bahraminasr and Vafaei-Sadr, 2020), which serves as a primary academic justification for our project.
 
-The film industry produces a vast trove of structured metadata encompassing **genres, cast, crew, release timing**, and crucially, **audience engagement metrics** such as ratings and vote counts.
-Analyzing this data through **data mining** and **machine learning** provides deep insights into audience perception, creative impact, and rating stability.
-
-This literature review synthesizes existing research that leverages **structured metadata** and **public engagement metrics** to predict film success — focusing specifically on the features available within the **IMDb Non-Commercial Datasets**. It establishes the foundation for our study, which seeks to build an **interpretable predictive pipeline** using these reproducible, publicly available data sources.
+**Citation:** Bahraminasr, A., & Vafaei-Sadr, A. (2020). *IMDb Data from Two Generations (1979 to 2019).* arXiv:2005.14147v3 [cs.CY].
 
 ---
 
-## 2. Audience Engagement Metrics and Rating Stability
+## 1. Overview of the Paper
 
-Studies focusing on audience engagement often leverage **vote counts** and **initial ratings** as proxies for pre-release hype and post-release popularity.
-
-**Asur and Huberman (2010)** demonstrated that early audience interest (modeled through social media activity) strongly correlates with eventual financial success. Extending this framework to IMDb’s internal metrics, subsequent analyses revealed that the **total number of user votes (`numVotes`)** serves as a powerful indicator of **audience anticipation** and **sustained interest**. In fact, **vote accumulation patterns** often predict **rating stability** more reliably than the initial rating itself.
-
-> **Application in our project:**
-> We will use the IMDb **Average Rating** (target variable) and **Vote Count** as key features.
-> We will analyze how the **average rating stabilizes as vote count increases**, identifying thresholds where audience consensus emerges.
-
-**Reference:**
-Asur, S., & Huberman, B. A. (2010). *Predicting the Future with Social Media.* IEEE/WIC/ACM International Conference on Web Intelligence.
+This article presents the largest and most comprehensive IMDb-based dataset available to date, encompassing over 79,000 titles from 1979 to 2019. The authors compiled rich metadata and user-generated information covering movie titles, ratings, number of votes, demographic voting patterns, genres, MPAA certificates, parental guides, release years, countries, languages, and more. Using statistical and preliminary machine learning analyses, the study reveals important trends in film ratings, vote distributions, and demographic influences on the audience's reception of movies, providing a valuable resource for deeper research into movie popularity and quality factors. This paper serves as a foundational dataset introduction and preliminary analysis for subsequent detailed explorations into movie success factors.
 
 ---
 
-## 3. The Influence of Creative Consistency (Star/Crew Power)
+## 2. Source Reliability and Authenticity
 
-The influence of **key creative personnel** — such as directors, writers, and lead actors — remains a defining factor in predicting film outcomes.
+This paper is considered a reliable academic source for our project. It was published on **arXiv (arXiv:2005.14147v3)**, a standard, highly-respected open-access repository for preprints in computer science, mathematics, and related fields. Its public availability, clear methodology, and citable (scholarly) nature make it an appropriate foundation for our literature review.
 
-**De Vany and Walls (1999)** conceptualized “**superstar effects**,” revealing that while star power does not guarantee success, it significantly influences **risk and uncertainty**.
-Recent metadata-driven studies extended this by leveraging IMDb datasets like `title.principals` and `title.crew` to generate **historical performance metrics** for creative professionals. These studies found that **creative consistency** (e.g., low variance in a director’s past film ratings) often predicts more stable audience outcomes than raw averages.
-
-> **Application in our project:**
-> Using `name.basics`, `title.crew`, and `title.principals`, we will construct **historical aggregates** (mean rating, median vote count, and filmography size) for principal directors and writers, modeling creative consistency as a core feature set.
-
-**Reference:**
-De Vany, A., & Walls, W. D. (1999). *Uncertainty in the Movie Industry: Does Star Power Reduce the Terror of the Box Office?* Journal of Cultural Economics, 23(4), 285–318.
+Source Link: https://arxiv.org/pdf/2005.14147
 
 ---
 
-## 4. Feature Engineering: Genre, Runtime, and Year Effects
+## 3. Key Findings & Inputs from the Paper
 
-Structured IMDb metadata — including **Genre**, **Runtime**, and **Release Year** — has been shown to significantly impact predictive accuracy.
+The authors' analysis revealed several key "inputs" that directly informed our project's direction:
 
-**Marović et al. (2011)** developed an early framework for **automatic IMDb rating prediction**, demonstrating that **metadata features alone** (Genre, Year, Runtime) explain a large portion of the variance in ratings.
-Additional studies suggest that runtime serves as an **indirect signal of film type and audience preference** — with shorter films often indicating non-feature productions, while excessively long runtimes tend to evoke **polarized reviews**. The release year, meanwhile, captures evolving **cultural preferences** and **technological eras** in filmmaking.
-
-> **Application in our project:**
-> We will apply **one-hot encoding** for Genre and Start Year from `title.basics` and use **Runtime Minutes** as a continuous predictor. Interaction terms between Genre and Runtime will be tested to detect **category-specific optimal runtimes**.
-
-**Reference:**
-Marović, M., et al. (2011). *Automatic Movie Ratings Prediction Using Machine Learning.* Proceedings of the 54th ELMAR Conference.
+* **Input 1: Metadata Shows Clear Patterns with Ratings:** The study confirms that metadata has a measurable relationship with ratings. For example, the paper finds clear differences in average ratings by **MPAA certificate** ("Movies with general audience receive the highest mean IMDb rating, 6.39") and by **Genre** ("The three most highly scored genres in IMDb are Drama, Comedy, and Action").
+* **Input 2: Temporal Trends are Significant:** The paper (e.g., FIG. 1, FIG. 3) proves that movie production, vote counts, and average ratings all show clear trends over time.
+* **Input 3: Regional Bias is a Measurable Factor:** A core finding (e.g., FIG. 8, FIG. 9) is the demonstrable difference in rating behavior between **US and Non-US voters**.
+* **Input 4: A Gap in the Research (Individuals):** The paper's analysis focuses on *demographic* groups (age, gender, region) but does not investigate the influence of *specific individuals*. While it collects "Director, Writers, Stars" data, it treats them as "some random string" and only uses "number of google results" as a proxy. This is a clear gap in their analysis.
 
 ---
 
-## 5. Cultural Bias and Regional Disparities in Ratings
+## 4. Justification for Our Project's Research Questions
 
-Despite IMDb’s global reach, several studies have uncovered **systematic cultural and linguistic disparities** in movie ratings.
+This paper's inputs provided the direct inspiration for our 8 research questions. We are using their findings as a starting point to ask deeper, more focused questions.
 
-**Campos et al. (2019)** analyzed cross-regional IMDb data and found that **non-English films** tend to receive **lower average ratings** compared to English-language films of similar critical quality. These differences stem from **exposure bias**, **cultural familiarity**, and **audience accessibility**.
-IMDb’s `title.akas` file provides **region and language identifiers**, enabling fine-grained analysis of such disparities.
-
-> **Application in our project:**
-> We will merge `title.basics` with `title.akas` to extract regional and linguistic attributes. Using **ANOVA tests**, we will assess **statistically significant differences** in average ratings across major language and region groups.
-
-**Reference:**
-Campos, M., et al. (2019). *Cultural Bias in Online Movie Ratings: A Cross-Regional Analysis.* Journal of Media Analytics, 6(2), 112–129.
-
----
-
-## 6. Machine Learning for Interpretable Prediction
-
-Machine learning techniques have become central to modeling film performance, but **interpretability** remains a persistent challenge.
-
-**Lee et al. (2017)** reviewed algorithms such as **linear regression**, **support vector machines**, and **random forests**, highlighting that while predictive accuracy improved, most models lacked **transparency** in explaining why certain features mattered.
-Recent research advocates combining **regularized linear models** (e.g., Lasso, Ridge) with **tree-based models** (e.g., Random Forest, Gradient Boosting) to balance **explainability and performance**.
-
-> **Application in our project:**
-> We will implement a **dual-model approach** — using **regularized regression** for feature weight analysis and **tree-based models** for capturing nonlinear interactions.
-> We will visualize **feature importances** via permutation or SHAP analysis to interpret how IMDb metadata features contribute to overall rating predictions.
-
-**Reference:**
-Lee, K., et al. (2017). *Predicting Movie Success with Machine Learning Techniques.* Proceedings of the International Conference on Data Mining.
+| Our Research Question | Input from the Article (The "Why") |
+| :--- | :--- |
+| **H1: Impact of Star Power** | **Input 4 (Research Gap):** The paper analyzed demographic groups but not the impact of *individuals*. This led us to ask if we could measure the "Star Power" of specific actors/directors. |
+| **H2: Runtime Optimization** | **Input 1 (Metadata Patterns):** The paper showed that metadata like `genre` and `MPAA rating` have clear patterns with average scores. This led us to ask if we could find a deeper pattern for `runtime` within specific genres. |
+| **H3: Predicting Popularity** | **Input 2 (Temporal Trends):** The paper tracks `numVotes` over time. This led us to ask if we could use this data to *predict* if a movie will become popular, treating it as a classification problem. |
+| **H4: Regional Rating Bias** | **Input 3 (Regional Bias Exists):** The paper *proved* bias exists between "US vs. Non-US" voters. This led us to ask if we could find a similar bias based on the movie's *production region*. |
+| **H5: Language Impact** | **Input 1 & 3 (Metadata & Bias):** Since `country` and `language` are collected and regional bias is proven, we were led to ask if `language` *by itself* is a significant factor, separate from the production region. |
+| **H6: Key Drivers of Rating** | **Input 1 (Metadata Patterns):** The paper confirmed that metadata is predictive (e.g., `genre`, `MPAA rating`). This led us to ask which of our available metadata features are the *strongest* or most important drivers of a movie's rating. |
+| **H7: Model Comparison** | **Input 1 (Metadata Patterns):** Since the data is predictive, we wanted to know *how* predictive. This led us to ask if a complex model (Random Forest) would be significantly better than a simple one (Ridge Regression). |
+| **H8: Genre Trends Over Time** | **Input 2 (Temporal Trends):** The paper *proved* that ratings and production change over time. This led us to combine this with `genre` data to ask how *specific genres* have changed in popularity and quality. |
 
 ---
 
-## 7. Data Integrity and Reproducibility
+## 5. Conclusion and Project Scope
 
-Many earlier studies depended on **proprietary or scraped data**, leading to inconsistencies in validation and reproducibility.
-IMDb’s **official non-commercial datasets** (e.g., `title.basics`, `title.ratings`, `title.principals`) solve this by providing **structured, standardized, and regularly updated** information.
+This paper is the ideal starting point for our review. It confirms our project is well-founded and that our research questions are built upon existing academic findings.
 
-> **Application in our project:**
-> We will use the official IMDb TSV datasets available at [https://datasets.imdbws.com/](https://datasets.imdbws.com/), ensuring full **transparency, reproducibility**, and **schema consistency** across all stages — from data preprocessing to model evaluation.
-
-**Reference:**
-IMDb Developer. *Non-Commercial Datasets.*
-[https://developer.imdb.com/non-commercial-datasets/](https://developer.imdb.com/non-commercial-datasets/)
-
----
-
-## 8. Summary and Identified Gaps
-
-This review highlights that IMDb’s structured datasets are robust enough for **comprehensive, reproducible analysis** of cinematic success using metadata and engagement metrics.
-
-**Key gaps our study addresses:**
-
-1. **Structured Metadata Focus:**
-   Prior studies relied heavily on external social media or financial data; our study focuses solely on IMDb’s internal variables — `numVotes`, `averageRating`, `genre`, and `runtime`.
-
-2. **Cross-Regional Analysis:**
-   We incorporate `title.akas` to examine **cultural and linguistic biases**, a relatively unexplored dimension.
-
-3. **Creative Consistency Modeling:**
-   We compute **historical metrics for directors and writers**, integrating experience and performance stability into predictive modeling.
-
-4. **Model Interpretability:**
-   We employ **regularized and tree-based models** with clear **feature importance visualizations**, improving both transparency and insight.
-
----
-
-## **Conclusion**
-
-The reviewed literature underscores the **multifaceted nature** of film analytics — combining economic, creative, cultural, and audience-driven dimensions.
-Building upon this foundation, our study introduces a **metadata-driven, interpretable, and reproducible framework** for predicting cinematic success using official IMDb datasets.
-This approach bridges **descriptive insights** (e.g., cultural bias, crew history) with **predictive modeling**, enabling data-driven understanding of what drives audience ratings in global cinema.
-
----
+It also highlights a **critical limitation and focus** for our project. The paper's most novel insights come from a custom-scraped dataset with *age and gender demographics*, which we do not have. Because we are limited to the official IMDb datasets, our project must compensate by focusing *more deeply* on the rich *structured metadata* that *is* available: actor/director influence (H1), runtime optimization (H2), and regional/language data (H4, H5). This paper validates our approach while also clearly defining our project's unique boundaries.
