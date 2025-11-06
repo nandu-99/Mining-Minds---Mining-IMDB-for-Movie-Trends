@@ -21,7 +21,6 @@ Studies focusing on audience engagement often leverage **vote counts** and **ini
 
 **Reference:**
 Asur, S., & Huberman, B. A. (2010). *Predicting the Future with Social Media.* IEEE/WIC/ACM International Conference on Web Intelligence.
-[Link](https://ieeexplore.ieee.org/document/5621336)
 
 ---
 
@@ -37,7 +36,6 @@ Recent metadata-driven studies extended this by leveraging IMDb datasets like `t
 
 **Reference:**
 De Vany, A., & Walls, W. D. (1999). *Uncertainty in the Movie Industry: Does Star Power Reduce the Terror of the Box Office?* Journal of Cultural Economics, 23(4), 285–318.
-DOI: [10.1023/A:1007608125988](https://doi.org/10.1023/A:1007608125988)
 
 ---
 
@@ -53,7 +51,6 @@ Additional studies suggest that runtime serves as an **indirect signal of film t
 
 **Reference:**
 Marović, M., et al. (2011). *Automatic Movie Ratings Prediction Using Machine Learning.* Proceedings of the 54th ELMAR Conference.
-[PDF](https://ieeexplore.ieee.org/document/6058387)
 
 ---
 
