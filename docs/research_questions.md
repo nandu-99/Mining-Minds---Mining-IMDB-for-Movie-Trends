@@ -17,10 +17,7 @@ The project aims to analyze IMDb’s movie datasets to uncover trends and predic
 3. **Develop Predictive Models:**
     Build interpretable machine-learning models for predicting movie ratings and popularity.
 
-4. **Leverage Textual Features:**
-    Integrate sentiment and narrative analysis from plot summaries and reviews to improve model accuracy.
-
-5. **Ensure Transparency and Reproducibility:**
+4. **Ensure Transparency and Reproducibility:**
     Use IMDb’s official datasets and document the modeling pipeline clearly for reproducibility.
 
 ---
