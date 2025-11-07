@@ -15,8 +15,8 @@
 | Phase                                     | Leadership Role | Responsibilities                                                               |
 | ----------------------------------------- | --------------- | ------------------------------------------------------------------------------ |
 | **Phase 1 (Setup & Planning)**            | **Vivekananda** | Repository setup, folder structure, task allocation, documentation initiation  |
-| **Phase 2 (EDA & Modeling)**              | **Prerak**      | Lead data analysis, ensure visualization quality, manage model experimentation |
-| **Phase 3 (Presentation & Final Report)** | **Prashant**    | Final dashboard/report delivery, presentation preparation, overall polishing   |
+| **Phase 2 (EDA & Modeling)**              | **Prashant**      | Lead data analysis, ensure visualization quality, manage model experimentation |
+| **Phase 3 (Presentation & Final Report)** | **Prerak**    | Final dashboard/report delivery, presentation preparation, overall polishing   |
 
 Each leader will be responsible for:
 
