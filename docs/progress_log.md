@@ -22,6 +22,6 @@ This document tracks the complete progress of the **Project**, including all maj
 | 04-11-2025 | Updated README                              | Updated README with latest project progress, dataset info, and folder structure.                               | Vivekananda                    | ✅ Completed    | Ensure README reflects latest workflow.                                                            |
 | 05-11-2025 | Draft Model Training Plan                   | Prepared initial draft for model training approach and methodology.                                            | Prashanth                      | ✅ Completed    | Review and finalize model training plan.                                                           |
 | 06-11-2025 | Data Preprocessing                          | Implemented data cleaning, merging, and basic visualization in the analysis notebook.                          | Prerak                         |✅ Completed    | Proceed to EDA & visualizations next.                                                              |
-
-
+| 07-11-2025 | Phase 1 Presentation | Presented Phase 1 progress, findings, and plans. | Vivekananda, Prerak, Prashanth | ✅ Completed | Received feedback; next step is to begin Phase 2 planning and execution. |
+| 09-11-2025 | Added Phase 1 PPT | Uploaded the Phase 1 presentation (PPT) to the GitHub repository. | Vivekananda | ✅ Completed | Next step is Phase 2. |
 ---
