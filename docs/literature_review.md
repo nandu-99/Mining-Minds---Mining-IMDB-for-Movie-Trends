@@ -1,14 +1,12 @@
-# **Literature Review**
-
 This review analyzes the foundational paper "IMDb Data from Two Generations (1979 to 2019)" (Bahraminasr and Vafaei-Sadr, 2020), which serves as a primary academic justification for our project.
 
-**Citation:** Bahraminasr, A., & Vafaei-Sadr, A. (2020). *IMDb Data from Two Generations (1979 to 2019).* arXiv:2005.14147v3 [cs.CY].
+**Citation:** Bahraminasr, A., & Vafaei-Sadr, A. (2020). *IMDb Data from Two Generations (1979 to 2019).* arXiv:2005.14147v3 [[cs.CY](http://cs.cy/)].
 
 ---
 
 ## 1. Overview of the Paper
 
-This article presents the largest and most comprehensive IMDb-based dataset available to date, encompassing over 79,000 titles from 1979 to 2019. The authors compiled rich metadata and user-generated information covering movie titles, ratings, number of votes, demographic voting patterns, genres, MPAA certificates, parental guides, release years, countries, languages, and more. Using statistical and preliminary machine learning analyses, the study reveals important trends in film ratings, vote distributions, and demographic influences on the audience's reception of movies, providing a valuable resource for deeper research into movie popularity and quality factors. This paper serves as a foundational dataset introduction and preliminary analysis for subsequent detailed explorations into movie success factors.
+This article presents a comprehensive, custom-scraped IMDb-based dataset of over 79,000 titles from 1979 to 2019. The authors compiled rich metadata (genres, MPAA certificates, release years, countries, languages, etc.) and user-generated information (ratings, number of votes, demographic voting patterns). Using statistical analysis, the study reveals important trends in film ratings, vote distributions, and demographic influences on audience reception. This paper provides a foundational analysis for subsequent explorations into movie success factors.
 
 ---
 
@@ -20,36 +18,49 @@ Source Link: https://arxiv.org/pdf/2005.14147
 
 ---
 
-## 3. Key Findings & Inputs from the Paper
+## 3. Key Findings from the Paper
 
-The authors' analysis revealed several key "inputs" that directly informed our project's direction:
+The authors' analysis of the 12-page paper revealed several key findings that validate our project's core assumptions.
 
-* **Input 1: Metadata Shows Clear Patterns with Ratings:** The study confirms that metadata has a measurable relationship with ratings. For example, the paper finds clear differences in average ratings by **MPAA certificate** ("Movies with general audience receive the highest mean IMDb rating, 6.39") and by **Genre** ("The three most highly scored genres in IMDb are Drama, Comedy, and Action").
-* **Input 2: Temporal Trends are Significant:** The paper (e.g., FIG. 1, FIG. 3) proves that movie production, vote counts, and average ratings all show clear trends over time.
-* **Input 3: Regional Bias is a Measurable Factor:** A core finding (e.g., FIG. 8, FIG. 9) is the demonstrable difference in rating behavior between **US and Non-US voters**.
-* **Input 4: A Gap in the Research (Individuals):** The paper's analysis focuses on *demographic* groups (age, gender, region) but does not investigate the influence of *specific individuals*. While it collects "Director, Writers, Stars" data, it treats them as "some random string" and only uses "number of google results" as a proxy. This is a clear gap in their analysis.
-
----
-
-## 4. Justification for Our Project's Research Questions
-
-This paper's inputs provided the direct inspiration for our 8 research questions. We are using their findings as a starting point to ask deeper, more focused questions.
-
-| Our Research Question | Input from the Article (The "Why") |
-| :--- | :--- |
-| **H1: Impact of Star Power** | **Input 4 (Research Gap):** The paper analyzed demographic groups but not the impact of *individuals*. This led us to ask if we could measure the "Star Power" of specific actors/directors. |
-| **H2: Runtime Optimization** | **Input 1 (Metadata Patterns):** The paper showed that metadata like `genre` and `MPAA rating` have clear patterns with average scores. This led us to ask if we could find a deeper pattern for `runtime` within specific genres. |
-| **H3: Predicting Popularity** | **Input 2 (Temporal Trends):** The paper tracks `numVotes` over time. This led us to ask if we could use this data to *predict* if a movie will become popular, treating it as a classification problem. |
-| **H4: Regional Rating Bias** | **Input 3 (Regional Bias Exists):** The paper *proved* bias exists between "US vs. Non-US" voters. This led us to ask if we could find a similar bias based on the movie's *production region*. |
-| **H5: Language Impact** | **Input 1 & 3 (Metadata & Bias):** Since `country` and `language` are collected and regional bias is proven, we were led to ask if `language` *by itself* is a significant factor, separate from the production region. |
-| **H6: Key Drivers of Rating** | **Input 1 (Metadata Patterns):** The paper confirmed that metadata is predictive (e.g., `genre`, `MPAA rating`). This led us to ask which of our available metadata features are the *strongest* or most important drivers of a movie's rating. |
-| **H7: Model Comparison** | **Input 1 (Metadata Patterns):** Since the data is predictive, we wanted to know *how* predictive. This led us to ask if a complex model (Random Forest) would be significantly better than a simple one (Ridge Regression). |
-| **H8: Genre Trends Over Time** | **Input 2 (Temporal Trends):** The paper *proved* that ratings and production change over time. This led us to combine this with `genre` data to ask how *specific genres* have changed in popularity and quality. |
+- **Finding 1: Metadata Patterns are Measurable:** The study confirms that metadata has a measurable relationship with ratings. For example, the paper finds clear differences in average ratings by **MPAA certificate** ("Movies with general audience receive the highest mean IMDb rating, 6.39") and by **Genre** ("The three most highly scored genres in IMDb are Drama, Comedy, and Action").
+- **Finding 2: Temporal Trends are Significant:** The paper proves that movie production (FIG. 1), vote counts (FIG. 2), and average ratings (FIG. 4) all show clear trends over time. For instance, the number of titles produced annually grew steadily until a peak in 2017.
+- **Finding 3: Demographic & Regional Bias is Proven:** A core finding is the demonstrable difference in rating behavior between demographic groups.
+    - **Gender:** Females tend to give slightly higher scores than males (FIG. 4, FIG. 5), while males constitute the largest portion of voters (FIG. 2).
+    - **Region:** A clear rating bias exists between **US and Non-US voters** (FIG. 8, FIG. 9).
+    - **Algorithm Bias:** The paper notes that the final "IMDb rating" is more correlated with Non-US voters and male voters than other groups.
+- **Finding 4: Not All Metadata is Equally Predictive:** The paper's correlation analysis on "Parental Guide" items (like "Sex & Nudity," "Violence & Gore") found an "almost-zero correlation" with ratings (FIG. 7). This suggests that simple linear correlations are not enough to find value, and more complex modeling is needed.
+- **Finding 5: Temporal Genre Trends are Explicitly Confirmed:** The paper's analysis explicitly confirms that genre popularity and ratings are not static. It notes a "descending trend of fantasy genre since 1994" and an "increasing the percentage of documentary... overtime". It also provides a baseline for genre quality, noting that "Drama, Comedy, and Action" are among the most highly scored.
 
 ---
 
-## 5. Conclusion and Project Scope
+## 4. Identified Research Gaps
 
-This paper is the ideal starting point for our review. It confirms our project is well-founded and that our research questions are built upon existing academic findings.
+While the paper provides a solid foundation, its primary value is in the **research gaps** it leaves open. Our project is designed to fill these gaps.
 
-It also highlights a **critical limitation and focus** for our project. The paper's most novel insights come from a custom-scraped dataset with *age and gender demographics*, which we do not have. Because we are limited to the official IMDb datasets, our project must compensate by focusing *more deeply* on the rich *structured metadata* that *is* available: actor/director influence (H1), runtime optimization (H2), and regional/language data (H4, H5). This paper validates our approach while also clearly defining our project's unique boundaries.
+- **Gap 1: Simplistic Genre Analysis:** The paper's analysis of genre is limited to basic statistics. It identifies the most frequent or "most highly scored genres" but treats them in isolation. It **does not** analyze the effect of **genre combinations** (e.g., Horror-SciFi-Comedy).
+- **Gap 2: The "Individual" Analysis Failure:** This is the paper's most significant gap. The authors *failed* to meaningfully analyze the impact of "Director, Writers, Stars". They explicitly state the data is "some random string" and they "do not have a lot of data to assign them a value or a vector". Their only solution was a weak proxy: "the number of google results".
+- **Gap 3: Identified Bias, But No Solution:** The paper *proves* a measurable rating bias exists between "US and Non-US voters" (Finding 3). It identifies the *problem* (the bias) but does not explore the *solution* (i.e., what makes a non-US film successful *despite* the bias).
+- **Gap 4: Exclusive Focus on Movies, Ignoring TV Series:** The paper's analysis is entirely focused on *movies*. It provides no insights into the trends or quality patterns of *TV Series* or *episodes* (e.g., season-by-season quality), which is a major, unanalyzed part of the IMDb dataset.
+
+---
+
+---
+
+## 5. Justification for Our Project's Research Questions
+
+This paper's findings and gaps provide the direct inspiration for our 6 research questions. We are using their work as a foundation to either formalize their basic findings or fill the innovative gaps they left open.
+
+| Our Research Question | Justification based on the Literature Review |
+| --- | --- |
+| **Q1: Tracking Movie Genre Popularity** | **Builds on Finding 5:** The paper *confirms* that temporal genre trends exist. Our question formalizes this by creating a comprehensive, side-by-side visualization of *both* popularity (votes) and quality (rating) over time. |
+| **Q2: TV Show "Rating Decay"** | **Fills Gap 4:** This is a *new area of inquiry* not covered by the paper. Our question extends the paper's temporal analysis methods (used for movies) to this entirely different and unanalyzed dataset (TV Series). |
+| **Q3: The "Genre Hybridity" Paradox** | **Builds on Gap 1:** The paper's analysis stops at single-genre statistics. Our question explores the *interaction effects* and *combinations* of genres, a more complex analysis the paper did not attempt. |
+| **Q4: The "Creative Hierarchy"** | **Fills Gap 2:** The paper *gave up* on analyzing creative roles, calling them a "random string". Our question uses a superior methodology (ML) to *solve* this problem and rank the "Creative Hierarchy." |
+| **Q5: The "Cross-Cultural Breakout"** | **Solves Gap 3:** The paper *identified* the problem (US vs. Non-US bias). Our question builds the *solution*: a predictive model to find the "fingerprints" of non-US films that *overcome* this bias. |
+| **Q6: The "High-Profile Flop"** | **Fills Gap 2:** The paper's inability to quantify "high-value inputs" (like a top-tier director) made this risk model impossible. By solving the "Star Power" problem, we can now build this high-value model. |
+
+## 6. Conclusion and Project Scope
+
+The Bahraminasr (2020) paper is the ideal academic foundation for our project. It validates our basic premises (e.g., metadata is predictive, regional bias exists) while leaving clear, high-value research gaps that our project is designed to fill.
+
+The paper's focus on a *demographic* dataset (age/gender) which we lack, combined with its *failure* to analyze *individuals* (actors/directors), gives our project a clear and innovative focus. We will leverage the official IMDb datasets to conduct the sophisticated, role-based metadata analysis that this paper proved was a missing piece of the puzzle.
