@@ -24,4 +24,10 @@ This document tracks the complete progress of the **Project**, including all maj
 | 06-11-2025 | Data Preprocessing                          | Implemented data cleaning, merging, and basic visualization in the analysis notebook.                          | Prerak                         |✅ Completed    | Proceed to EDA & visualizations next.                                                              |
 | 07-11-2025 | Phase 1 Presentation | Presented Phase 1 progress, findings, and plans. | Vivekananda, Prerak, Prashanth | ✅ Completed | Received feedback; next step is to begin Phase 2 planning and execution. |
 | 09-11-2025 | Added Phase 1 PPT | Uploaded the Phase 1 presentation (PPT) to the GitHub repository. | Vivekananda | ✅ Completed | Next step is Phase 2. |
+| 10-11-2025 | Post-Presentation Discussion | Discussed what went well in Phase 1 presentation and identified areas of improvement. | Vivekananda, Prashanth, Prerak | ✅ Completed | Apply improvements in Phase 2 workflow. |
+| 11-11-2025 | Phase 1 Report (IEEE Format) | Prepared the Phase 1 report following IEEE formatting guidelines. | Vivekananda, Prashanth, Prerak | ✅ Completed | Review before uploading. |
+| 12-11-2025 | Phase 2 Planning | Planned structure, tasks, and roadmap for Phase 2 execution. | Vivekananda, Prashanth, Prerak | ✅ Completed | Start Phase 2 tasks. |
+| 13-11-2025 | Refinement & Innovation Round | Refined research questions, hypotheses, methodology, and added innovative ideas across the project. | Vivekananda, Prashanth, Prerak | ✅ Completed | Use refined framework for Phase 2. |
+| 14-11-2025 | Uploaded Phase 1 Report | Uploaded final Phase 1 IEEE report to GitHub repository. | Prashanth | ✅ Completed | Maintain report versioning. |
+| 15-11-2025 | Documentation & Notebook Updates | Moved Phase 1 report to `reports` folder, added genre analysis notebook, and updated research questions. | Prashanth, Vivekananda, Prerak | ✅ Completed | Continue expanding EDA and Phase 2 tasks. |
 ---
