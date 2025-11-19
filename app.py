@@ -6,7 +6,7 @@ st.set_page_config(page_title="Director Movie Explorer", layout="wide")
 
 @st.cache_data
 def load_data():
-    return duckdb.read_csv("/Users/prerakarya/mininggggg/Mining-Minds---Mining-IMDB-for-Movie-Trends/data/raw/processed/director_movies_filter.csv").df()
+    return duckdb.read_csv("data/raw/processed/director_movies_filter.csv").df()
 
 df = load_data()
 
