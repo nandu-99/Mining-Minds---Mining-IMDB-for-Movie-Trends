@@ -6,6 +6,8 @@ This document tracks the complete progress of the **Project**, including all maj
 
 ## Project Timeline & Progress
 
+## Phase 1 Progress
+
 | **Date**   | **Task / Activity**                         | **Details / Description**                                                                                      | **Team Member(s)**             | **Status**     | **Remarks / Next Steps**                                                                           |
 | ---------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------- | -------------------------------------------------------------------------------------------------- |
 | 25-10-2025 | Repository Creation                         | Created GitHub repository for the project and initialized version control.                                     | Vivekananda                    | ✅ Completed    | Setup project foundation.                                                                          |
@@ -23,6 +25,10 @@ This document tracks the complete progress of the **Project**, including all maj
 | 05-11-2025 | Draft Model Training Plan                   | Prepared initial draft for model training approach and methodology.                                            | Prashanth                      | ✅ Completed    | Review and finalize model training plan.                                                           |
 | 06-11-2025 | Data Preprocessing                          | Implemented data cleaning, merging, and basic visualization in the analysis notebook.                          | Prerak                         |✅ Completed    | Proceed to EDA & visualizations next.                                                              |
 | 07-11-2025 | Phase 1 Presentation | Presented Phase 1 progress, findings, and plans. | Vivekananda, Prerak, Prashanth | ✅ Completed | Received feedback; next step is to begin Phase 2 planning and execution. |
+---
+## Phase 2 Progress
+| **Date**   | **Task / Activity**                         | **Details / Description**                                                                                      | **Team Member(s)**             | **Status**     | **Remarks / Next Steps**                                                                           |
+| ---------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------- | -------------------------------------------------------------------------------------------------- |
 | 09-11-2025 | Added Phase 1 PPT | Uploaded the Phase 1 presentation (PPT) to the GitHub repository. | Vivekananda | ✅ Completed | Next step is Phase 2. |
 | 10-11-2025 | Post-Presentation Discussion | Discussed what went well in Phase 1 presentation and identified areas of improvement. | Vivekananda, Prashanth, Prerak | ✅ Completed | Apply improvements in Phase 2 workflow. |
 | 11-11-2025 | Phase 1 Report (IEEE Format) | Prepared the Phase 1 report following IEEE formatting guidelines. | Vivekananda, Prashanth, Prerak | ✅ Completed | Review before uploading. |
@@ -30,4 +36,7 @@ This document tracks the complete progress of the **Project**, including all maj
 | 13-11-2025 | Refinement & Innovation Round | Refined research questions, hypotheses, methodology, and added innovative ideas across the project. | Vivekananda, Prashanth, Prerak | ✅ Completed | Use refined framework for Phase 2. |
 | 14-11-2025 | Uploaded Phase 1 Report | Uploaded final Phase 1 IEEE report to GitHub repository. | Prashanth | ✅ Completed | Maintain report versioning. |
 | 15-11-2025 | Documentation & Notebook Updates | Moved Phase 1 report to `reports` folder, added genre analysis notebook, and updated research questions. | Prashanth, Vivekananda, Prerak | ✅ Completed | Continue expanding EDA and Phase 2 tasks. |
+| 16-11-2025 | Literature Review Update & Progress Log       | Updated literature review with latest references; maintained and updated the progress log; planned EDA & visualizations. | Vivekananda, Prashanth, Prerak | ✅ Completed    | Begin implementing EDA & visualizations in notebook.                                                     |
+| 17-11-2025 | Hypothesis Update & EDA Planning              | Refined hypotheses based on updated literature; started EDA & visualizations; outlined plan for predictive analysis. | Vivekananda, Prashanth, Prerak | ✅ Completed | Complete initial EDA; finalize predictive model approach.                                                |
+| 18-11-2025 | EDA & Descriptive Analysis                     | Completed exploratory data analysis and descriptive statistics; prepared summary insights; planned Streamlit dashboard and predictive analysis. | Vivekananda, Prashanth, Prerak | ✅ Completed    | Proceed to implement predictive models and Streamlit dashboard prototype.                               |
 ---
