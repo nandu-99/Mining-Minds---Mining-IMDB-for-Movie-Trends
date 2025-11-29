@@ -35,6 +35,8 @@ st.markdown("""
 
 st.title("IMDb Dashboard Overview")
 
+st.sidebar.image("./streamlit_app/assets/logo.png", width="content")
+
 # unzip file
 ZIP_PATH = "./streamlit_app/data/homepage_master.zip"
 CSV_PATH = "./streamlit_app/data/homepage_master.csv"
