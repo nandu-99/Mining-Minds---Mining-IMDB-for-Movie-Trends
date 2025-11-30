@@ -59,8 +59,6 @@ The project aims to analyze IMDb’s movie datasets to uncover **high-value patt
 
 ### **6. Predicting "Expectation Mismatch" (The High-Profile Flop)**
 
----
-
 **Question:** Can we predict a "flop"? We define a "High Profile Flop" as a movie with high value inputs (e.g., a "Top Tier" director and a high rated cast) that *fails* to achieve a high audience rating (e.g., `averageRating` < 6.0). We will build a model to identify the features (genre, runtime, etc.) that are common in these "expectation mismatch" films.
 
 - **Innovation:** This is much more advanced than a simple "Predict Rating" model. It's a risk modeling question, focused on identifying the specific combination of features that lead to a high-profile failure.
