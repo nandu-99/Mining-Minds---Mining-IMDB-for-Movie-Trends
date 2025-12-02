@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 st.set_page_config(page_title="Genre Hybridity Explorer", layout="wide")
+st.sidebar.image("./streamlit_app/assets/logo.png", width="content")
 
 st.markdown("""
 <style>
