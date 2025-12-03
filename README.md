@@ -55,6 +55,7 @@ imdb-movie-trends
  ┃ ┣ data_preprocessing_plan.md     
  ┃ ┣ progress_log.md                  # Progress log of complete project
  ┣ 📂 reports
+ ┣ 📂 streamlit_app
  ┣ README.md                       # Project overview (this file)
  ┣ requirements.txt                # Python dependencies and environment setup
  ┗ .gitignore                      # Files and folders to ignore in Git
@@ -62,20 +63,34 @@ imdb-movie-trends
 
 ## Quick Access to Key Documentation
 
-- [Team Plan & Roles](./docs/team_roles_and_rotation.md)  
+- [Progress Log](./docs/progress_log.md)  
 - [Literature Review](./docs/literature_review.md)  
 - [Research Questions](./docs/research_questions.md)  
 - [Hypotheses](./docs/hypotheses.md) 
 - [Data Dictionary](./docs/data_dictionary.md)
 
 
-## Team Members & Roles
+---
 
-| Name                   | Role                                                                                                  | Phase-1 Responsibility |
-| ---------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------- |
-| **Vivekananda (Lead)** | Repository setup, project board, folder structure, dataset download, README creation, data dictionary | ✔                      |
-| **Prerak**             | Research questions, literature review, data preprocessing, maintenance                                       | ✔                      |
-| **Prashant**           | Hypotheses creation, preprocessing plan, methodology, data preprocessing,  documentation                                    | ✔                      |
+## Streamlit Dashboard
+
+**Live App:**
+[https://mining-minds-imdb.streamlit.app/](https://mining-minds-imdb.streamlit.app/)
+
+**Dashboard Screenshot:**
+<img width="1440" height="813" alt="Screenshot 2025-12-03 at 8 06 04 PM" src="https://github.com/user-attachments/assets/65cbd845-e2b5-4ea8-a489-3f555f215cf5" />
+
+---
+
+## Team Members & Phase Contributions
+
+| Name                   | Phase 1                                                                                  | Phase 2                                                                      | Phase 3                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Vivekananda (Lead)** | Repo setup, folder structure, dataset preparation, contributed across all planning tasks | Complete EDA, descriptive analysis, insight generation                       | EDA refinements, Streamlit dashboard development, key research questions |
+| **Prashant**           | Literature review, research questions, hypothesis design                                 | Workflow planning, task coordination, predictive analysis                    | Predictive modeling, report preparation, documentation                   |
+| **Prerak**             | Data preprocessing, model training plan                                                  | Refining research questions, research methodology, Streamlit app development | Workflow planning, coordination, key question contributions              |
+
+---
 
 **Leadership Rotation Plan:**
 
@@ -111,12 +126,3 @@ imdb-movie-trends
 
 ---
 
-## Future Plan
-
-| Phase       | Tentative Date | Key Deliverables                                       |
-| ----------- | -------------- | ------------------------------------------------------ |
-| **Phase 1** | 5 Nov 2025     | Complete project setup and planning documentation      |
-| **Phase 2** | 21 Nov 2025    | EDA, data preprocessing, visualization of key insights |
-| **Phase 3** | 3 Dec 2025     | Final analysis, predictions, and report submission     |
-
----
