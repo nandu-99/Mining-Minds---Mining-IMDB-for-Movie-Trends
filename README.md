@@ -95,8 +95,8 @@ imdb-movie-trends
 **Leadership Rotation Plan:**
 
 * **Phase 1 Lead:** Vivekananda
-* **Phase 2 Lead:** Prerak
-* **Phase 3 Lead:** Prashant
+* **Phase 2 Lead:** Prashant
+* **Phase 3 Lead:** Prerak
 
 ---
 
