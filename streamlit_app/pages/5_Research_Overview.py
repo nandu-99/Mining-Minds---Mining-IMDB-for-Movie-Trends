@@ -102,7 +102,7 @@ with col2:
         obj8_insights = pd.DataFrame({
             "Insight": [
                 "Director and Cast Career Scores added as key features",
-                "Leakage controls removed one-hit career bias",
+                "Our result exceeds the 77% benchmark established in core literature (Asad et al., 2012)",
                 "Advanced evaluation added ROC-AUC and Macro F1 metrics",
                 "Final model reached 80.65% accuracy with 0.89 ROC-AUC"
             ]
