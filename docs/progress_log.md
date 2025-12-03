@@ -45,15 +45,14 @@ This document tracks the complete progress of the **Project**, including all maj
 
 ## Phase 3 Progress
 
-| **Date**   | **Task / Activity**                     | **Details / Description**                                                               | **Team Member(s)**                | **Status**     | **Remarks / Next Steps**                                      |
-| ---------- | --------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------- | -------------- | ------------------------------------------------------------- |
-| 24-11-2025 | Phase 3 Kickoff Meeting                 | Conducted meeting to plan Phase-3 deliverables, tasks, and Streamlit dashboard roadmap. | Vivekananda, Prashant, **Prerak** | ✅ Completed    | Begin Phase-3 task execution from 25 Nov onward.              |
-| 25-11-2025 | Dashboard Notebook & Dataset Processing | Initial work on dashboard notebook and preprocessing.          | Vivekananda                       |  ✅ Completed  | prepared and  processed dataset for dashboard.    |
-| 26-11-2025 | Dashboard Notebook & Dataset (Merged)   | Merged dashboard notebook + processed dataset (PR #71).                                 | Vivekananda                       | ✅ Completed    | Move to Streamlit UI development.                             |
-| 27-11-2025 | Phase-2 Report Upload                   | Uploaded and merged final Phase 2 report (PR #68).                                      | Prashant                          | ✅ Completed    | Archive under `/reports`.                                     |
-| 28-11-2025 | Streamlit Homepage                      | Added homepage UI of Streamlit app (PR #74).                                            | Vivekananda                       | ✅ Completed    | Link homepage with dashboard and other modules.               |
-| 29-11-2025 | Directors Page & Logo                   | Added Directors page + integrated project logo into Streamlit app (PR #77).             | Vivekananda                       | ✅ Completed    | Style cleanup pending.                                        |
-| 30-11-2025 | Notebook, Dataset & Streamlit Page      | Added updated notebooks, datasets, and new Streamlit page (PR #80).                     | Vivekananda                       | ✅ Completed    | Finish remaining UI pages and backend connections.            |
-| 30-11-2025 | Updated Labels                          | Updated GitHub labels (phase-1, phase-2, phase-3).                                      | **Prerak**                        | ✅ Completed    | Maintain consistency across PRs/issues.                       |
+| **Date**   | **Task / Activity**                         | **Details / Description**                                                                                      | **Team Member(s)**                       | **Status**     | **Remarks / Next Steps**                                                                           |
+| ---------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------- | -------------------------------------------------------------------------------------------------- |
+| 23-11-2025 | Phase 2 Presentation Upload & Progress Update | Added Phase 2 presentation to repository, updated progress log, and initiated planning for Phase 3 execution. | Vivekananda, Prashant                    | ✅ Completed | Begin detailed Phase 3 task planning. |
+| 24-11-2025 | Phase 3 Task Allocation & Roadmap Planning | Finalized task ownership and defined overall deliverables and timelines for the Phase 3 final stage. | Vivekananda, Prerak, Prashant            | ✅ Completed | Start execution based on finalized plan. |
+| 25-11-2025 | Phase 2 Report Finalization & Dashboard Design Review | Finalized Phase 2 report and reviewed dashboard design and improvement scope. | Vivekananda, Prashant                    | ✅ Completed | Implement dashboard design updates. |
+| 26-11-2025 | PR Merge & Model/Research Review | Merged all pending pull requests and reviewed updated research questions and predictive modeling approach. | Vivekananda, Prashant, Prerak            | ✅ Completed | Finalize analysis workflow. |
+| 27-11-2025 | Research Question Strategy Planning | Planned mapping of research objectives to descriptive analysis and predictive modeling workflows. | Prashant, Prerak                         | ✅ Completed | Apply strategy to notebook structure. |
+| 28-11-2025 | Phase 2 Deliverables Upload & Dataset Processing | Uploaded Phase 2 report, completed notebook for dashboard data preparation, and uploaded processed dataset. | Prashant, Vivekananda                    | ✅ Completed | Begin final dashboard integration and documentation updates. |
+
 
 ---
