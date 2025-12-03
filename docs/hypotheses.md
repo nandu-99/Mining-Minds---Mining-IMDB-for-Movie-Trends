@@ -1,3 +1,5 @@
+# **Hypotheses Doc**
+
 This document outlines the testable hypotheses for the "Mining IMDb for Movie Trends" project, derived from our four innovative research questions. Each hypothesis is presented with a corresponding null hypothesis and a proposed methodology for testing.
 
 ---
@@ -41,20 +43,7 @@ This document outlines the testable hypotheses for the "Mining IMDb for Movie Tr
     3. For each group, calculate the **Summary Statistics** (specifically `Mean` and `Variance`) for `averageRating` for both 'Pure' and 'Hybrid' films.
     4. Create side-by-side **Box Plots** (**Visualization**) to visually compare the median, quartiles, and range of the two groups. Our conclusion will be based on this descriptive and visual analysis.
 
-### **4. The "Creative Hierarchy"**
-
-**Research Question:** How does the feature importance of the *Writer* compare to the *Director* and *Main Cast* across different genres (e.g., does the Writer matter more in *Mystery* than in *Action*?)?
-
-- **Hypothesis (H1):** The "creative hierarchy" is genre-dependent. We hypothesize the **`writer_tier`** feature will be selected as the root split (highest **Gini Index** gain) for "plot-driven" genres (e.g., Mystery, Drama). We hypothesize **`director_tier`** or **`cast_tier`** will be the root split for "spectacle-driven" genres (e.g., Action, Sci-Fi).
-- **Null Hypothesis (H0):** The same feature (e.g., `director_tier`) will be the root split (best **Gini Index**) for all major genres, indicating no change in the hierarchy.
-- **Methodology:**
-    1. Engineer `writer_tier`, `director_tier`, and `cast_tier` features (**Feature Creation**).
-    2. Create a binary target variable `is_success` (e.g., `averageRating > 7.0`) (**Binarization**).
-    3. Train separate **Decision Tree Classifiers** (**Decision Tree Induction**) for *each* major genre (e.g., one model for 'Drama', one for 'Action').
-    4. Inspect the **root node** of each tree to identify the feature selected as the best split (based on the **Gini Index**).
-    5. Compare which feature (Writer, Director, or Cast) is chosen as the root split across the different genre-specific models.
-
-### **5. The "Cross-Cultural Breakout" Formula**
+### **4. The "Cross-Cultural Breakout" Formula**
 
 **Research Question:** What metadata "fingerprints" distinguish Non-US/Non-English films that achieve mainstream global popularity (Top 10% vote count) from those that remain regionally confined?
 
@@ -67,7 +56,7 @@ This document outlines the testable hypotheses for the "Mining IMDb for Movie Tr
     4. Evaluate the model using **k-fold Cross-Validation** and its average **Classification Error**.
     5. To find the "fingerprint," separately build a **Decision Tree Classifier** and inspect its root node and first-level branches.
 
-### **6. Predicting "Expectation Mismatch" (The High-Profile Flop)**
+### **5. Predicting "Expectation Mismatch" (The High-Profile Flop)**
 
 **Research Question:** Can we predict a "flop," defined as a movie with high-value inputs (e.g., "Top-Tier" director/cast) that *fails* to achieve a high audience rating (e.g., `averageRating` < 6.0)?
 
