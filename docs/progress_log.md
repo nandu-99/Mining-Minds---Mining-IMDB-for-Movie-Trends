@@ -53,6 +53,12 @@ This document tracks the complete progress of the **Project**, including all maj
 | 26-11-2025 | PR Merge & Model/Research Review | Merged all pending pull requests and reviewed updated research questions and predictive modeling approach. | Vivekananda, Prashant, Prerak            | ✅ Completed | Finalize analysis workflow. |
 | 27-11-2025 | Research Question Strategy Planning | Planned mapping of research objectives to descriptive analysis and predictive modeling workflows. | Prashant, Prerak                         | ✅ Completed | Apply strategy to notebook structure. |
 | 28-11-2025 | Phase 2 Deliverables Upload & Dataset Processing | Uploaded Phase 2 report, completed notebook for dashboard data preparation, and uploaded processed dataset. | Prashant, Vivekananda                    | ✅ Completed | Begin final dashboard integration and documentation updates. |
+| 29-11-2025 | Streamlit UI Enhancements & Phase Review | Added Directors page, app logo, homepage for Streamlit dashboard, updated Phase 2 report, and reviewed overall Phase 3 progress. | Vivekananda, Prashant, Prerak | ✅ Completed | Continue dashboard feature expansion. |
+| 30-11-2025 | Genre Analysis Page & Model Improvement | Added Movie Genre Analysis page and worked on improving the predictive model. | Vivekananda, Prashanth | ✅ Completed | Tune and validate updated models. |
+| 01-12-2025 | Progress Update & Research Planning | Updated progress log and planned workflows for remaining research questions. | Prerak, Vivekananda | ✅ Completed | Execute remaining analyses. |
+| 02-12-2025 | Dashboard Expansion & Model Metrics | Added Genre Hybridity page and Universal Search page; integrated performance evaluation metrics into predictive modeling. | Prashant, Vivekananda, Prerak | ✅ Completed | Final consolidation and testing. |
+| 03-12-2025 | Finalization & Presentation Preparation | Updated progress log, uploaded improved predictive modeling notebook, completed Research Overview page, cleared pending Phase 3 tasks, prepared final presentation, and recorded presentation video. | Vivekananda, Prashant, Prerak | ✅ Completed | Ready for final presentation. |
+| 04-12-2025 | Final Presentation Day | Delivered final project presentation and walkthrough of all results and dashboards. | Vivekananda, Prerak, Prashant | ✅ Completed | Project closure. |
 
 
 ---
